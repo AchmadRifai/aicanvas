@@ -11,6 +11,6 @@ Project ini dibuat di eclipse JDT
 
 ## Cara Menjalankan
 - Buka Terminal / Command Prompt
-- Masukan perintah `git clone https://github.com/AchmadRifai/AiCanvas.git`
-- Lalu `cd AiCanvas/`
+- Masukan perintah `git clone https://github.com/AchmadRifai/aicanvas.git`
+- Lalu `cd aicanvas/`
 - kemudian `mvn clean package exec:java`
