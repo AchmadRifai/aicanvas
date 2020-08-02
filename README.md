@@ -1,6 +1,6 @@
 # AiCanvas
 
-...Project ini dibuat di eclipse JDT
+Project ini dibuat di eclipse JDT
 
 ## Syarat Minimal
 - Sistem Operasi 32 bit (all java can run) atau lebih
