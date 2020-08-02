@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>aia</groupId>
+  <artifactId>aicanvas</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+  <name>aicanvas</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>8</java.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <main.class>aia.aicanvas.App</main.class>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.4.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.4.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <build>
+  	<plugins>
+  	  <plugin>
+  	    <groupId>org.apache.maven.plugins</groupId>
+  	    <artifactId>maven-surefire-plugin</artifactId>
+  	    <version>2.22.1</version>
+  	  </plugin>
+  	  <plugin>
+  	    <groupId>org.codehaus.mojo</groupId>
+  	    <artifactId>exec-maven-plugin</artifactId>
+  	    <version>1.5.0</version>
+  	    <executions>
+  	      <execution>
+  	        <id>java</id>
+  	        <goals>
+  	          <goal>java</goal>
+  	        </goals>
+  	      </execution>
+  	    </executions>
+  	    <configuration>
+  	      <mainClass>${main.class}</mainClass>
+  	    </configuration>
+  	  </plugin>
+  	</plugins>
+  </build>
+</project>
